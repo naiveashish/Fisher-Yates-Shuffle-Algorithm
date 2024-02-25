@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .box{
+            width: 50%;
+            margin: 0 auto;
+            font-family :Arial, Helvetica, sans-serif
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+   <p><b>The Fisher-Yates shuffle algorithm</b> is a method for randomly shuffling the elements of an array. It works by iterating over the array in reverse order, swapping each element with a randomly selected element that precedes it. This process ensures that every element has an equal chance of being placed at any position in the shuffled array.
+
+Here's a detailed explanation of the algorithm:
+
+Initialization: Start by initializing an array, points, with the elements to be shuffled.
+
+Iteration: Begin a loop that iterates over the array in reverse order, from the last element to the second element. This loop is controlled by the variable i, which starts at points.length - 1 and decrements by 1 in each iteration until i becomes 1.
+
+Random Selection: Within each iteration of the loop, generate a random index j between 0 and i, inclusive. This random index represents the position of an element to swap with the element at index i.
+
+Swap Elements: Swap the element at index i with the element at index j. This ensures that each element has an equal chance of being placed at any position in the shuffled array.
+
+Iteration Completes: Once the loop completes, the array points will be shuffled, with its elements rearranged randomly.</p>
+
+<b id="demo"></b><br>
+
+<button onclick="myFunction()">shuffling</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
